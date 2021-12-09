@@ -15,6 +15,6 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - "DatabaseSetteings:ConnectionString=mongodb://localhost:27017"
     depends_on:
-      - catalogdb
+      - catalogDb
     ports:
       - "8000:80"
