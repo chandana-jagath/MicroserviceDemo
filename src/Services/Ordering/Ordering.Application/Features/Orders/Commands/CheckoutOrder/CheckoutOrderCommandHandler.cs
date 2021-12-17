@@ -14,7 +14,7 @@ using Ordering.Domain.Entities;
 
 namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
 {
-    public class CheckoutOrderCommandHandler:IRequestHandler<CheckoutOrderCommand>
+    public class CheckoutOrderCommandHandler:IRequestHandler<CheckoutOrderCommand, int>
     {
         private readonly IOrderRepository _orderRepository;
         private readonly IMapper _mapper;
